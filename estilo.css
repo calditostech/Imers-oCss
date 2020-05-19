@@ -1,0 +1,230 @@
+/*reset do css*/
+* {
+	margin : 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #00688b;
+	background-size: auto 100vw;
+	font-family: Verdana;
+	height: 100vh;
+	font-size: 10px;
+}
+
+/* se a tela tiver pelo menos 400px vai carregar  */
+@media(min-width: 600px) {
+    body {
+    	font-size: 14px;
+    }
+}
+
+header {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+	background-color: white;
+	position: fixed;
+	width: 100vh;
+	top: 0px;
+	font-family: 'Gloria Hallelujah', cursive;
+
+} 
+
+a{
+  color: teal;
+  text-decoration: none;
+}
+
+a:hover {
+ text-decoration: underline;
+}
+
+.menu a {
+	display: block;
+	padding: 10px 20px;
+	transition: background-color 5s,color 2s;
+
+}
+
+.menu li {
+	list-style: none;
+}
+
+.menu ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.titulo {
+	transform: scale(0.2) translateY(50vh);
+	opacity: .0;
+
+	animation: alternate 2s animacaoTitulo infinite ;
+}
+
+@keyframes animacaoTitulo {
+	0% {
+     transform: scale(0.2) translateY(50vh);
+	 opacity: 0;
+
+	}
+	100% {
+		transform: scale(1) translateY(0);
+		opacity: 1;
+	}
+}
+
+
+.site-subtitle,
+.site-title {
+	font-style: italic;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 100px;
+    margin-left: -400px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+
+.site-subtitle {
+	line-height: 1.8em;
+}
+
+.img-portfolio {
+	height: 250px;
+	width: 300px;
+	font-family: 'Press Start 2P', cursive;
+	color: white;
+	margin-left: 70px;
+	object-fit: cover;
+	object-position: left bottom;
+    transition: transform 5000ms;
+}
+
+
+figcaption{
+	color : whitesmoke;
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+	margin-left: 70px;
+
+}
+
+.contato,
+.port {
+	color : white;
+	font-size: 22px;
+	font-family: 'Press Start 2P', cursive;
+	margin-left: 120px;
+	margin-top: 170px;
+}
+
+.grid {
+	margin-left: -200px;
+	display: grid;
+	grid-gap: 2em;
+	grid-template-columns: 300px 300px;
+
+}
+
+@media(min-width: 560px) {
+	.port {
+		grid-gap: 2em;
+		grid-template-columns: 240px 240px;
+	}
+}
+
+@media(min-width: 880px) {
+	.port {
+		grid-gap: 2em;
+		grid-template-columns:  repeat(3, 240px);
+		justify-content: center;
+	}
+}
+
+@media(min-width: 560px) {
+	.grid {
+		grid-gap: 2em;
+		grid-template-columns:  repeat(1, 240px);
+		justify-content: center;
+	}
+}
+
+@media(min-width: 880px) {
+	.grid {
+		grid-gap: 2em;
+		grid-template-columns:  repeat(4, 300px);
+		justify-content: center;
+	}
+}
+
+.contato a {
+	color: whitesmoke;
+	font-size: 4em;
+	transition: text-shadow 1s;
+}
+
+.contato .icons{
+	text-align: center;
+}
+
+.contato a:active,
+.contato a:hover {
+	text-decoration: none;
+	text-shadow: 0px 50px 10px rgba(255,255,255,0.5);
+}
+
+.menu a:hover{
+	background-color: teal;
+	color : white;
+}
+
+.contato a:active{
+	text-shadow: 0px 0px 10px yellow;
+}
+
+.img-portfolio:hover{
+	transform: scale(1.2);
+}
+
+h6{
+	color: white;
+	font-size: 16px;
+}
+
+.cal{
+	margin-left: 20px;
+	margin-right: 550px;
+	margin-top: 150px;
+	height: 200px;
+	width: 250px;
+	
+}
+
+.fotocal {
+   border-radius: 50%;
+   height: 200px;
+   width: 200px;
+   border:solid 5px white;
+
+}
+
+.nome {
+	font-size: 12px;
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+}
+
+.prof {
+	font-size: 12px;
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+
+}
